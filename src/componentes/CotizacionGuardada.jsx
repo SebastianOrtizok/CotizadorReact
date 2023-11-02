@@ -16,23 +16,23 @@ function CotizacionGuardada() {
             <table className="table table-striped table-hover table-responsive">
   <thead>
     <tr>
-      <th className="text-center">Ubicación</th>
-      <th className="text-center">Ubicación %</th>
-      <th className="text-center">Metros</th>
-      <th className="text-center">Tipo</th>
-      <th className="text-center">Tipo %</th>
-      <th className="text-center">Resultado</th>
+      <th className="text-center mobile-column">Ubicación</th>
+      <th className="text-center mobile-column">Ubicación %</th>
+      <th className="text-center mobile-column">Metros</th>
+      <th className="text-center mobile-column">Tipo</th>
+      <th className="text-center mobile-column">Tipo %</th>
+      <th className="text-center mobile-column">Resultado</th>
     </tr>
   </thead>
   <tbody>
     {cotizaciones.map((cotizacion, index) => (
       <tr key={index}>
-        <td className="text-center">{cotizacion.selectedData.ubicacionText}</td>
-        <td className="text-center">{cotizacion.selectedData.ubicacion}</td>
-        <td className="text-center">{cotizacion.selectedData.metrosCuadrados}</td>
-        <td className="text-center">{cotizacion.selectedData.tipo}</td>
-        <td className="text-center">{cotizacion.selectedData.factor}</td>
-        <td className="text-center">{cotizacion.resultado.toFixed(2)}</td>
+        <td className="text-center mobile-column">{cotizacion.selectedData.ubicacionText}</td>
+        <td className="text-center mobile-column">{cotizacion.selectedData.ubicacion}</td>
+        <td className="text-center mobile-column">{cotizacion.selectedData.metrosCuadrados}</td>
+        <td className="text-center mobile-column">{cotizacion.selectedData.tipo}</td>
+        <td className="text-center mobile-column">{cotizacion.selectedData.factor}</td>
+        <td className="text-center mobile-column resultado">{cotizacion.resultado.toFixed(2)}</td>
       </tr>
     ))}
   </tbody>

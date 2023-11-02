@@ -28,25 +28,25 @@ console.log(cotizacionObj)
     <table className="table table-striped table-hover table-responsive">
   <thead>
     <tr>
-      <th className="text-center">Ubicación</th>
-      <th className="text-center"> %</th>
-      <th className="text-center">Tipo</th>
-      <th className="text-center">%</th>
-      <th className="text-center">M2</th>
-      <th className="text-center">Total</th>
-      <th className="text-center">Guardar</th>
+      <th className="text-center mobile-column">Ubicación</th>
+      <th className="text-center mobile-column"> %</th>
+      <th className="text-center mobile-column">Tipo</th>
+      <th className="text-center mobile-column">%</th>
+      <th className="text-center mobile-column">M2</th>
+      <th className="text-center mobile-column">Total</th>
+      <th className="text-center mobile-column">Guardar</th>
     </tr>
   </thead>
   <tbody>
 <tr>
-        <td className="text-center">{selectedData.ubicacionText}</td>
-        <td className="text-center">{selectedData.ubicacion}</td>
-        <td className="text-center">{selectedData.tipo}</td>
-        <td className="text-center">{selectedData.factor}</td>
-        <td className="text-center">{selectedData.metrosCuadrados}</td>
-        <td className="text-center">$ {cotizacionObj.resultado.toFixed(2)
+        <td className="text-center mobile-column">{selectedData.ubicacionText}</td>
+        <td className="text-center mobile-column">{selectedData.ubicacion}</td>
+        <td className="text-center mobile-column">{selectedData.tipo}</td>
+        <td className="text-center mobile-column">{selectedData.factor}</td>
+        <td className="text-center mobile-column">{selectedData.metrosCuadrados}</td>
+        <td className="text-center mobile-column">$ {cotizacionObj.resultado.toFixed(2)
 }</td>
-        <td className="text-center">{cotizacionGuardada ? (
+        <td className="text-center mobile-column">{cotizacionGuardada ? (
         <p>Cotización guardada 👍</p>
       ) : (
 

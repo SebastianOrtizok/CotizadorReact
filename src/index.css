@@ -4,6 +4,7 @@ table {
     box-shadow: 1px 1px 7px black;
     width: 95%;
     margin: 0 auto; 
+    table-layout: auto;
   }
   
   td {
@@ -22,5 +23,38 @@ table {
 
   th{
     background-color: rgb(249, 220, 179);
+  }
+  
+
+  @media screen and (max-width: 760px) {
+    table {
+      width: 100%;
+      flex: 1;
+      margin: 10px;
+      padding: 0;
+      margin: 0;
+    }
+  
+    tr {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    th {
+      display: none;
+    }
+
+   td {
+      width: 100%;
+      box-sizing: border-box;
+      height: 60px;
+      text-align: center;
+      align-items: center;
+    }
+    .resultado{
+      background-color: rgb(249, 220, 179);
+    
+    }
   }
   
