@@ -7,15 +7,19 @@ function CotizarPoliza() {
   const selectedData = location.state.selectedData;
   let valorMetroCuadrado = 35.86;
   let resultado = valorMetroCuadrado * selectedData.factor * selectedData.ubicacion * selectedData.metrosCuadrados;
+  const fechaHoraActual = new Date()
+  const fechaActual = fechaHoraActual.toLocaleDateString()
+  const horaActual = fechaHoraActual.toLocaleTimeString();
 
   const cotizacionObj = {
     selectedData: selectedData,
     resultado: resultado,
+    fecha: fechaActual,
+    hora: horaActual
   };
 console.log(cotizacionObj)
 
   const [cotizacionGuardada, setCotizacionGuardada] = useState(false);
-
   const handleGuardarCotizacion = () => {
     const cotizacionesAnteriores = JSON.parse(localStorage.getItem("cotizaciones")) || [];
     cotizacionesAnteriores.push(cotizacionObj);

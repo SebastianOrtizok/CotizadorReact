@@ -56,5 +56,9 @@ table {
       background-color: rgb(249, 220, 179);
     
     }
+    p {
+      display: inline;
+      padding: 1rem;
+    }
   }
   
